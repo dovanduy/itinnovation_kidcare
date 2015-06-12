@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 html,
 body {
     height: 100%;
@@ -88,4 +89,27 @@ a.desc:after {
     border-left: 3px solid #eed3d7;
     padding: 10px 20px;
     margin: 0 0 15px 0;
+}
+
+#launchpage_header{
+    background: url('../images/launchpage.jpg');
+    background-size: cover;
+    background-position-y: -30px;
+    background-position-x: center;
+    height: 570px !important;
+}
+#launchpage_header h1{
+    font-family: 'Open sans';
+    font-weight: bold;
+}
+#launchpage_header .lead{
+    margin-top: 0px;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Open sans';
+    text-shadow: -1px 1px 1px #fff;
+}
+.navbar-brand{
+    padding: 0;
+    padding-left: 10px;
 }
