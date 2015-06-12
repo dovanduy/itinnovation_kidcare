@@ -47,7 +47,7 @@ $this->title = 'Protect your family\'s online safety';
 
         <hr/>
 
-        <div class="text-center">
+        <div class="text-center" style="padding: 40px;">
             <h1>Too good to be true? It isn't.</h1>
             <h4>Buy KidCare now during the introductino phase, and you'll get a early buyer discount of 25%.</h4>
             <a href="index.php?r=site%2Fcontact" class="btn btn-lg btn-primary">Order now</a>
