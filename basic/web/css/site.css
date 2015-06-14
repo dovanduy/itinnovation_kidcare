@@ -113,6 +113,10 @@ a.desc:after {
     padding: 0;
     padding-left: 10px;
 }
+.navbar-default{
+    border-bottom: solid 3px #a0c4d1;
+    box-shadow: 1px 1px 1px #eee;
+}
 .navbar-default img{
     height: inherit;
     padding: 3px;
@@ -129,4 +133,13 @@ fieldset{
 
 label{
     margin-top: 5px;
+}
+
+h1,h2{
+    font-family: 'Open sans';
+}
+h1{
+    margin-top: 0px;
+    font-size: 30px;
+    color: #333;
 }

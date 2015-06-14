@@ -5,7 +5,7 @@
         <fieldset>
             <legend>Device</legend>
             <label>Device-id</label>
-            <input name="deviceid" type="text" class="form-control" />
+            <input name="deviceid" value="dfgh-4567-8ghj5-67fgh-67sd7" disabled="disabled" type="text" class="form-control" />
         </fieldset>
         <fieldset>
             <legend>User settings</legend>
@@ -28,12 +28,23 @@
         </fieldset>
 
         <hr/>
-        <input type="submit" value="Save my preferences" class="btn btn-primary" />
+        <p>
+            <div class="pull-left">
+                <input type="submit" value="Save my preferences" class="btn btn-primary" />
+            </div>
+            <div class="pull-right">
+                <input type="submit" value="Delete all data" class="btn btn-warning" />
+                <input type="submit" value="Delete my account" class="btn btn-danger" />
+            </div>
+        </p>
     </form>
     </div>
     <div class="col-md-4">
         <div class="well">
-            On this page you can set your preferences.
+            <h4>Note:</h4>
+            On this page you can set your preferences. If you would like to receive notifications on your
+            email address and phone based on your child's behaviour, then make sure you provide a correct email
+            address and phone number and turn off notifications.
         </div>
     </div>
 </div>
