@@ -15,6 +15,9 @@
             <label>Last name</label>
             <input name="lastname" type="text" class="form-control" />
 
+            <label>Child's name</label>
+            <input name="kidname" type="text" class="form-control" />
+
             <label>Email address <small>(used for sending notifications)</small></label>
             <input name="emailaddress" type="text" class="form-control" />
 
