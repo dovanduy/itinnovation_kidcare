@@ -16,6 +16,41 @@ use yii\web\IdentityInterface;
  */
 class User extends \yii\db\ActiveRecord  implements IdentityInterface
 {
+    public $username;
+    public $password_hash;
+
+    /**
+     * @return string
+     */
+    public function getUsername()
+    {
+        return $this->username;
+    }
+
+    /**
+     * @param string $username
+     */
+    public function setUsername($username)
+    {
+        $this->username = $username;
+    }
+    public $deviceId;
+
+    /**
+     * @return mixed
+     */
+    public function getDeviceId()
+    {
+        return $this->deviceId;
+    }
+
+    /**
+     * @param mixed $deviceId
+     */
+    public function setDeviceId($deviceId)
+    {
+        $this->deviceId = $deviceId;
+    }
 
     /**
      * @inheritdoc
@@ -36,9 +71,12 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
         return [
             'userid' => 'Userid',
             'username' => 'Username',
-            'password' => 'Password'
+            'password' => 'Password',
         ];
     }
+
+
+
     /** INCLUDE USER LOGIN VALIDATION FUNCTIONS**/
     /**
      * @inheritdoc
@@ -137,7 +175,7 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
      */
     public function setPassword($password)
     {
-        $this->password_hash = Security::generatePasswordHash($password);
+        $this->password_hash = sha1($password);
     }
 
     /**
