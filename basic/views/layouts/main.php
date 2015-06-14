@@ -34,15 +34,36 @@ AppAsset::register($this);
             ]);
             echo Nav::widget([
                 'options' => ['class' => 'navbar-nav navbar-right'],
-                'items' => [
-                    ['label' => 'Features', 'url' => ['/site/index']],
-                    ['label' => 'Product', 'url' => '#'],
-                    ['label' => 'Order now', 'url' => ['/site/contact']],
-                    Yii::$app->user->isGuest ?
-                        ['label' => 'Login', 'url' => ['/site/login']] :
-                        ['label' => 'Logout (' . Yii::$app->user->identity->username . ')',
-                            'url' => ['/site/logout'],
-                            'linkOptions' => ['data-method' => 'post']],
+                'items'=> [
+                    // if not logged in
+                    ['label'=>'Features', 'url'=>array('site/index'),
+                        'visible'=>(!isset(Yii::$app->user->identity->username))],
+                    ['label'=>'Product',  'url'=>array('#'),
+                        'visible'=>(!isset(Yii::$app->user->identity->username))],
+                    ['label'=>'Order now','url'=>array('site/contact'),
+                        'visible'=>(!isset(Yii::$app->user->identity->username))],
+                    ['label'=>'Login', 'url'=>array('site/login'),
+                        'visible'=>(!isset(Yii::$app->user->identity->username))],
+
+                    // if logged in
+                    ['label'=>'Dashboard', 'url' => ['app/index'],
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
+                    ['label'=>'Filters', 'url' => ['app/filters'],
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
+                    ['label'=>'Real-time', 'url' => ['app/realtime'],
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
+                    ['label'=>'Mood Analysis', 'url' => ['app/mood'],
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
+                    ['label'=>'Settings', 'url' => ['app/settings'],
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
+                    ['label'=>'Logout', 'url'=>array('site/logout'),
+                        'visible'=>(isset(Yii::$app->user->identity->username)),
+                        'linkOptions' => ['data-method' => 'post']],
                 ],
             ]);
             NavBar::end();

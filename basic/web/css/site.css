@@ -113,3 +113,20 @@ a.desc:after {
     padding: 0;
     padding-left: 10px;
 }
+.navbar-default img{
+    height: inherit;
+    padding: 3px;
+}
+
+legend{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+fieldset{
+    margin-bottom: 15px;
+}
+
+label{
+    margin-top: 5px;
+}
