@@ -23,7 +23,8 @@
                                     array('Watch TV', 2),
                                     array('Sleep', 7)
                                 ),
-                                'options' => array('title' => 'PC Use')));
+                                'options' => array('title' => 'PC Use', 'legend' => 'none')
+                            ));
                             ?>
                         </div>
                     </div>

@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36642cea-5b4d-4dd9-a357-daa3dca94b61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.json" afterPath="$PROJECT_DIR$/basic/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.lock" afterPath="$PROJECT_DIR$/basic/composer.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/dashboard.php" afterPath="$PROJECT_DIR$/basic/views/app/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/moodAnalysis.php" afterPath="$PROJECT_DIR$/basic/views/app/moodAnalysis.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ICT Innovation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,9 +73,20 @@
       <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/basic/views/app/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.37884617" vertical-offset="432" max-vertical-offset="1360">
-              <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-              <folding />
+            <state vertical-scroll-proportion="0.5423077" vertical-offset="143" max-vertical-offset="1377">
+              <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+              <folding>
+                <marker date="1434292425982" expanded="true" signature="1234:1376" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="1282:1376" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2015:2258" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2055:2108" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2145:2243" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2298:2873" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2340:2862" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2380:2423" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2460:2847" placeholder="..." />
+                <marker date="1434292425982" expanded="true" signature="2512:2828" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -608,12 +615,12 @@
       <workItem from="1434136614273" duration="95000" />
       <workItem from="1434198777278" duration="252000" />
       <workItem from="1434273859294" duration="183000" />
-      <workItem from="1434279102118" duration="10879000" />
+      <workItem from="1434279102118" duration="11020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17246000" />
+    <option name="totallyTimeSpent" value="17387000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -1036,9 +1043,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/basic/views/app/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.37884617" vertical-offset="432" max-vertical-offset="1360">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-          <folding />
+        <state vertical-scroll-proportion="0.5423077" vertical-offset="143" max-vertical-offset="1377">
+          <caret line="25" column="89" selection-start-line="25" selection-start-column="89" selection-end-line="25" selection-end-column="89" />
+          <folding>
+            <marker date="1434292425982" expanded="true" signature="1234:1376" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="1282:1376" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2015:2258" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2055:2108" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2145:2243" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2298:2873" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2340:2862" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2380:2423" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2460:2847" placeholder="..." />
+            <marker date="1434292425982" expanded="true" signature="2512:2828" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
