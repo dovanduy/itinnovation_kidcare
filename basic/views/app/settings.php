@@ -5,7 +5,8 @@
         <fieldset>
             <legend>Device</legend>
             <label>Device-id</label>
-            <input name="deviceid" value="dfgh-4567-8ghj5-67fgh-67sd7" disabled="disabled" type="text" class="form-control" />
+            <input name="deviceid" value="<?=\app\models\User::findIdentity(Yii::$app->user->id)->deviceId?>"
+                   disabled="disabled" type="text" class="form-control" />
         </fieldset>
         <fieldset>
             <legend>User settings</legend>
