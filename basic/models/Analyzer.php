@@ -25,7 +25,9 @@ class Analyzer extends Model{
     /**
      * Splits the characters from the logitems into words
      */
-    private function splitCharacterStream(){    }
+    public function splitCharacterStream($characterstream){
+        return explode(" ", $characterstream);
+    }
 
     /**
      * @param Check if on a word a filter is applied
