@@ -12,8 +12,5 @@ use Faker\Provider\tr_TR\DateTime;
 
 class LogItem {
 
-    public $timestamp;
-    public $characters;
-
 
 }

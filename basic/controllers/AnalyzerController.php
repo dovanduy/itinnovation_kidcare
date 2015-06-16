@@ -1,7 +1,5 @@
 <?php
-
 namespace app\controllers;
-
 use app\models\Alert;
 use app\models\User;
 use Faker\Provider\tr_TR\DateTime;
@@ -12,13 +10,36 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+/**
+ * This controller takes care of synchronization with the log server,
+ * as well as the processing of data and generation of alerts.
+ * @package app\controllers
+ *
+ * @author Dennis Eikelenboom
+ */
 class AnalyzerController extends Controller
 {
 
     public function actionIndex()
     {
-        //echo User::findIdentity(\Yii::$app->user->id)->getAttribute('email');
+        echo 'Analyzing..';
+    }
 
+    /**
+     * Pulls items from the external server
+     */
+    public function pullItems(){   }
+
+    /**
+     * Creating alerts for log items
+     */
+    public function processLogItems(){
+
+        // process log item
+
+        // run sentiment analysis
+
+        // generate alert
         $alert = new Alert(
             date('Y-m-d G:i:s'),
             'test',
@@ -27,5 +48,20 @@ class AnalyzerController extends Controller
         $alert->save();
     }
 
+    /**
+     * Splits the characters from the logitems into words
+     */
+    private function splitCharacterStream(){    }
 
+    /**
+     * @param Check if on a word a filter is applied
+     */
+    private function checkFilter($word){   }
+
+    /**
+     * Create alert to user on keyword found in log item
+     */
+    private function createAlert($timestamp, $keyword){
+
+    }
 }

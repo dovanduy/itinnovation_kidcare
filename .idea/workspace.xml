@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36642cea-5b4d-4dd9-a357-daa3dca94b61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/LogItem.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/SettingsForm.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/User_Filterlist.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/views/app/createFilter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/Alert.php" afterPath="$PROJECT_DIR$/basic/models/Alert.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/tests/AnalyzerControllerTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/controllers/AnalyzerController.php" afterPath="$PROJECT_DIR$/basic/controllers/AnalyzerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/controllers/AppController.php" afterPath="$PROJECT_DIR$/basic/controllers/AppController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/Filter.php" afterPath="$PROJECT_DIR$/basic/models/Filter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/User.php" afterPath="$PROJECT_DIR$/basic/models/User.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/filters.php" afterPath="$PROJECT_DIR$/basic/views/app/filters.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/layouts/main.php" afterPath="$PROJECT_DIR$/basic/views/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/moodAnalysis.php" afterPath="$PROJECT_DIR$/basic/views/app/moodAnalysis.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/settings.php" afterPath="$PROJECT_DIR$/basic/views/app/settings.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/models/LogItem.php" afterPath="$PROJECT_DIR$/basic/models/LogItem.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.json" afterPath="$PROJECT_DIR$/basic/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/composer.lock" afterPath="$PROJECT_DIR$/basic/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/itinnovation_kidcare.iml" afterPath="$PROJECT_DIR$/itinnovation_kidcare.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ICT Innovation.iws" />
@@ -63,37 +57,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createFilter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/views/app/createFilter.php">
+      <file leaf-file-name="AnalyzerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.384615" vertical-offset="19" max-vertical-offset="561">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.384615" vertical-offset="563" max-vertical-offset="1105">
+              <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalyzerControllerTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/tests/AnalyzerControllerTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.44219652" vertical-offset="102" max-vertical-offset="493">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding>
                 <element signature="e#6#104#0#PHP" expanded="true" />
-                <element signature="e#105#126#0#PHP" expanded="true" />
-                <marker date="1434454437879" expanded="true" signature="619:651" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/tests/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="1071" max-vertical-offset="2652">
-              <caret line="78" column="87" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
-              <folding>
-                <element signature="e#35#57#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="1989">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="filters.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="filters.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/views/app/filters.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.610586" vertical-offset="612" max-vertical-offset="1377">
+            <state vertical-scroll-proportion="-12.423077" vertical-offset="612" max-vertical-offset="1377">
               <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogItem.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/basic/models/LogItem.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,17 +124,14 @@
         <option value="$PROJECT_DIR$/basic/views/application/dashboard.php" />
         <option value="$PROJECT_DIR$/basic/web/css/site.css" />
         <option value="$PROJECT_DIR$/basic/views/app/realtime.php" />
-        <option value="$PROJECT_DIR$/basic/composer.json" />
         <option value="$PROJECT_DIR$/basic/views/app/dashboard.php" />
         <option value="$PROJECT_DIR$/basic/config/db.php" />
         <option value="$PROJECT_DIR$/basic/models/LoginForm.php" />
         <option value="$PROJECT_DIR$/basic/views/site/register.php" />
         <option value="$PROJECT_DIR$/basic/models/RegistrationForm.php" />
         <option value="$PROJECT_DIR$/basic/models/Alert.php" />
-        <option value="$PROJECT_DIR$/basic/controllers/AnalyzerController.php" />
         <option value="$PROJECT_DIR$/basic/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/basic/vendor/yiisoft/yii2/web/User.php" />
-        <option value="$PROJECT_DIR$/basic/models/LogItem.php" />
         <option value="$PROJECT_DIR$/basic/views/app/moodAnalysis.php" />
         <option value="$PROJECT_DIR$/basic/views/app/settings.php" />
         <option value="$PROJECT_DIR$/basic/models/SettingsForm.php" />
@@ -134,15 +141,19 @@
         <option value="$PROJECT_DIR$/basic/config/web.php" />
         <option value="$PROJECT_DIR$/basic/models/User.php" />
         <option value="$PROJECT_DIR$/basic/models/User_Filterlist.php" />
-        <option value="$PROJECT_DIR$/basic/controllers/AppController.php" />
         <option value="$PROJECT_DIR$/basic/views/app/filters.php" />
+        <option value="$PROJECT_DIR$/basic/models/LogItem.php" />
+        <option value="$PROJECT_DIR$/basic/controllers/AppController.php" />
+        <option value="$PROJECT_DIR$/basic/controllers/AnalyzerController.php" />
+        <option value="$PROJECT_DIR$/basic/tests/AnalyzerControllerTest.php" />
+        <option value="$PROJECT_DIR$/basic/composer.json" />
       </list>
     </option>
   </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP 5.4" />
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="1381" />
@@ -219,105 +230,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT Innovation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itinnovation_kidcare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layouts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT Innovation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itinnovation_kidcare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT Innovation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itinnovation_kidcare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT Innovation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itinnovation_kidcare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ICT Innovation" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="itinnovation_kidcare" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="basic" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -338,6 +251,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/phpunit.phar" />
+    <property name="options.lastSelected" value="reference.webide.settings.project.settings.php.phpunit" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -348,7 +266,13 @@
       <recent name="E:\Workspace\itinnovation_kidcare\basic\controllers" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="PHPUnit.AnalyzerControllerTest">
+    <configuration default="false" name="AnalyzerControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="AnalyzerControllerTest" file="$PROJECT_DIR$/basic/tests/AnalyzerControllerTest.php" scope="Class" />
+      <RunnerSettings RunnerId="PhpRunner" />
+      <ConfigurationWrapper RunnerId="PhpRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -602,7 +526,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="0" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="PHPUnit.AnalyzerControllerTest" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit.AnalyzerControllerTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -625,12 +556,12 @@
       <workItem from="1434376560284" duration="1263000" />
       <workItem from="1434379472822" duration="6499000" />
       <workItem from="1434438746959" duration="3455000" />
-      <workItem from="1434443875045" duration="14036000" />
+      <workItem from="1434443875045" duration="16591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60155000" />
+    <option name="totallyTimeSpent" value="62710000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1381" height="728" extended-state="0" />
@@ -646,6 +577,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32885906" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24981076" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -655,12 +587,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -715,20 +646,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basic/web/css/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1396" max-vertical-offset="2040">
-          <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1190">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1201" max-vertical-offset="1734">
@@ -780,13 +697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8027079" vertical-offset="2339" max-vertical-offset="2873">
           <caret line="162" column="51" selection-start-line="162" selection-start-column="51" selection-end-line="162" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41463414" vertical-offset="136" max-vertical-offset="1037">
-          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -933,13 +843,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/models/LogItem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34501845" vertical-offset="0" max-vertical-offset="542">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/models/Word.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="238">
@@ -994,20 +897,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.501845" vertical-offset="0" max-vertical-offset="542">
-          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/views/app/settings.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.97601473" vertical-offset="529" max-vertical-offset="1071">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="2" />
           <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
+            <element signature="e#6#27#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1051,7 +946,7 @@
         <state vertical-scroll-proportion="-120.96154" vertical-offset="0" max-vertical-offset="3281">
           <caret line="185" column="0" selection-start-line="185" selection-start-column="0" selection-end-line="185" selection-end-column="0" />
           <folding>
-            <element signature="e#29#37#0#PHP" expanded="true" />
+            <element signature="e#29#37#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1072,6 +967,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/app/filters.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.423077" vertical-offset="612" max-vertical-offset="1377">
+          <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/models/LogItem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="272">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4077491" vertical-offset="1768" max-vertical-offset="2652">
+          <caret line="117" column="5" selection-start-line="117" selection-start-column="5" selection-end-line="117" selection-end-column="5" />
+          <folding>
+            <element signature="e#35#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/app/createFilter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51039696" vertical-offset="19" max-vertical-offset="561">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#104#0#PHP" expanded="true" />
+            <element signature="e#105#126#0#PHP" expanded="true" />
+            <marker date="1434454437879" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/basic/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.4230769" vertical-offset="1253" max-vertical-offset="2074">
@@ -1082,33 +1015,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
+    <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="1071" max-vertical-offset="2652">
-          <caret line="78" column="87" selection-start-line="78" selection-start-column="87" selection-end-line="78" selection-end-column="87" />
-          <folding>
-            <element signature="e#35#57#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-10.384615" vertical-offset="563" max-vertical-offset="1105">
+          <caret line="57" column="7" selection-start-line="57" selection-start-column="7" selection-end-line="57" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/app/createFilter.php">
+    <entry file="file://$PROJECT_DIR$/basic/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.384615" vertical-offset="19" max-vertical-offset="561">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6900369" vertical-offset="68" max-vertical-offset="1122">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/tests/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.84" vertical-offset="0" max-vertical-offset="1989">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/tests/AnalyzerControllerTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44219652" vertical-offset="102" max-vertical-offset="493">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
             <element signature="e#6#104#0#PHP" expanded="true" />
-            <element signature="e#105#126#0#PHP" expanded="true" />
-            <marker date="1434454437879" expanded="true" signature="619:651" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/app/filters.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.610586" vertical-offset="612" max-vertical-offset="1377">
-          <caret line="55" column="68" selection-start-line="55" selection-start-column="68" selection-end-line="55" selection-end-column="68" />
-          <folding />
         </state>
       </provider>
     </entry>
