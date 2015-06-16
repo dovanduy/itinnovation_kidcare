@@ -26,14 +26,11 @@ class AnalyzerController extends Controller
     }
 
     /**
-     * Pulls items from the external server
-     */
-    public function pullItems(){   }
-
-    /**
      * Creating alerts for log items
      */
     public function processLogItems(){
+
+        // pull items from server
 
         // process log item
 
@@ -47,16 +44,6 @@ class AnalyzerController extends Controller
         );
         $alert->save();
     }
-
-    /**
-     * Splits the characters from the logitems into words
-     */
-    private function splitCharacterStream(){    }
-
-    /**
-     * @param Check if on a word a filter is applied
-     */
-    private function checkFilter($word){   }
 
     /**
      * Create alert to user on keyword found in log item
