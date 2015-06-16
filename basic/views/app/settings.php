@@ -1,47 +1,51 @@
+<?php
+use yii\helpers\Html;
+use yii\bootstrap\ActiveForm;
+?>
+
 <h1>Settings</h1>
 <div class="row">
     <div class="col-md-8">
-    <form>
+        <?php $form = ActiveForm::begin([
+            'id' => 'settings-form',
+            'fieldConfig' => [
+                'template' => "<label>{label}</label>{input}<div>{error}</div>",
+            ],
+        ]); ?>
+
         <fieldset>
             <legend>Device</legend>
-            <label>Device-id</label>
-            <input name="deviceid" value="<?=\app\models\User::findIdentity(Yii::$app->user->id)->deviceId?>"
-                   disabled="disabled" type="text" class="form-control" />
+            <?= $form->field($user, 'deviceid')->textInput(['readOnly' => true]) ?>
         </fieldset>
         <fieldset>
-            <legend>User settings</legend>
-            <label>First name</label>
-            <input name="firstname" type="text" class="form-control" />
-
-            <label>Last name</label>
-            <input name="lastname" type="text" class="form-control" />
-
-            <label>Child's name</label>
-            <input name="kidname" type="text" class="form-control" />
-
-            <label>Email address <small>(used for sending notifications)</small></label>
-            <input name="emailaddress" type="text" class="form-control" />
-
-            <label>Phone number (incl. country code) <small>(used for sending notifications)</small></label>
-            <input name="phonenumber" type="text" class="form-control" />
+            <legend>User Settings</legend>
+            <?= $form->field($user, 'firstname') ?>
+            <?= $form->field($user, 'lastname') ?>
+            <?= $form->field($user, 'childsname') ?>
+            <?= $form->field($user, 'email') ?>
+            <?= $form->field($user, 'phonenumber') ?>
         </fieldset>
+
         <fieldset>
             <legend>Notifications</legend>
-            <input type="checkbox" name="email_notifications" checked /> Receive email notifications<br/>
-            <input type="checkbox" name="phone_notifications" checked /> Receive notifications on my phone
+            <?= $form->field($user, 'email_notifications')->checkbox() ?>
+            <?= $form->field($user, 'phone_notifications')->checkbox() ?>
         </fieldset>
 
-        <hr/>
-        <p>
+    <div class="form-group">
+        <div>
             <div class="pull-left">
-                <input type="submit" value="Save my preferences" class="btn btn-primary" />
+            <?= Html::submitButton('Save my preferences', ['class' => 'btn btn-primary', 'name' => 'save-settings-button']) ?>
             </div>
+
             <div class="pull-right">
-                <input type="submit" value="Delete all data" class="btn btn-warning" />
-                <input type="submit" value="Delete my account" class="btn btn-danger" />
+                <input type="submit" disabled value="Delete all data" class="btn btn-warning" />
+                <input type="submit" disabled value="Delete my account" class="btn btn-danger" />
             </div>
-        </p>
-    </form>
+        </div>
+    </div>
+
+    <?php ActiveForm::end(); ?>
     </div>
     <div class="col-md-4">
         <div class="well">

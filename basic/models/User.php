@@ -1,7 +1,6 @@
 <?php
 
 namespace app\models;
-
 use Yii;
 use yii\base\NotSupportedException;
 use yii\db\ActiveRecord;
@@ -14,18 +13,10 @@ use yii\web\IdentityInterface;
  * @property string $username
  * @property string $password
  */
-class User extends \yii\db\ActiveRecord  implements IdentityInterface
+class User extends ActiveRecord  implements IdentityInterface
 {
     public $username;
     public $password_hash;
-
-    /**
-     * @return string
-     */
-    public function getUsername()
-    {
-        return $this->username;
-    }
 
     /**
      * @param string $username
@@ -33,23 +24,6 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
     public function setUsername($username)
     {
         $this->username = $username;
-    }
-    public $deviceId;
-
-    /**
-     * @return mixed
-     */
-    public function getDeviceId()
-    {
-        return $this->deviceId;
-    }
-
-    /**
-     * @param mixed $deviceId
-     */
-    public function setDeviceId($deviceId)
-    {
-        $this->deviceId = $deviceId;
     }
 
     /**
@@ -61,6 +35,10 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
             [['username', 'password'], 'required'],
             [['username', 'password'], 'string', 'max' => 100]
         ];
+    }
+
+    public function setFirstName($name){
+        $this->setAttribute('firstname', $name);
     }
 
     /**
@@ -203,4 +181,8 @@ class User extends \yii\db\ActiveRecord  implements IdentityInterface
     }
     /** EXTENSION MOVIE **/
 
+    public function hasEnabledFilter($filter){
+
+
+    }
 }
