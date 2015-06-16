@@ -8,6 +8,7 @@ use app\models\User;
 use Faker\Provider\tr_TR\DateTime;
 use Yii;
 use yii\filters\AccessControl;
+use yii\helpers\Json;
 use yii\web\Controller;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
@@ -23,9 +24,12 @@ use app\models\ContactForm;
 class AnalyzerController extends Controller
 {
 
-    public function actionIndex()
+    public function actionIndex($log = false)
     {
-        $this->processLogItems();
+        $items = $this->processLogItems();
+        if($log){
+            echo $items;
+        }
     }
 
     /**
@@ -41,12 +45,14 @@ class AnalyzerController extends Controller
 
         // and process each log item, printing its textual content
         foreach ($items as $item) {
-            echo $this->analyze($item);
+            $this->analyze($item);
 
             // flag as processed
             $item->setAttribute('processed',1);
             $item->save();
         }
+
+        return Json::encode($items);
 
     }
 

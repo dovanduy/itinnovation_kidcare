@@ -34,11 +34,17 @@
                             echo GoogleChart::widget(array('visualization' => 'PieChart',
                                 'data' => array(
                                     array('Task', 'Hours per Day'),
-                                    array('Neutral', 52),
-                                    array('Positive', 36),
-                                    array('Negative', 22)
+                                    array('Neutral', $mood->getAttribute('neutral')),
+                                    array('Positive', $mood->getAttribute('positive')),
+                                    array('Negative', $mood->getAttribute('negative'))
                                 ),
-                                'options' => array('title' => '5-day Sentiment Analysis')));
+                                'options' => array(
+                                    'title' => 'Sentiment Analysis Graph',
+                                    'slices' => [ '1' => [ 'color' => 'green' ],
+                                                  '0' => [ 'color' => 'blue',
+                                                  '2' => [ 'color' => 'red' ]]
+                                    ]
+                                )));
                             ?>
                         </div>
                     </div>

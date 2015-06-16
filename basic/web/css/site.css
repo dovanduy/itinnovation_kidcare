@@ -162,3 +162,8 @@ h1{
     overflow-y: scroll;
     font-family: "Courier New", Courier, monospace;
 }
+
+.realtime ul{
+    padding: 0;
+    list-style: none;
+}

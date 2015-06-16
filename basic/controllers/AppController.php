@@ -64,7 +64,7 @@ class AppController extends Controller
     public function actionInsight()
     {
         // run analyzer to process latest updates
-        Yii::$app->runAction('analyzer/index');
+        Yii::$app->runAction('analyzer/');
 
         // show past log items
         $logitems = LogItem::findAll([
@@ -85,7 +85,10 @@ class AppController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('dashboard');
+        $mood = Mood::find(['userid' => Yii::$app->user->id])->one();
+        return $this->render('dashboard',[
+            'mood' => $mood
+        ]);
     }
 
     public function actionFilters()
@@ -155,7 +158,7 @@ class AppController extends Controller
         $user = User::findIdentity(Yii::$app->user->id);
         $model = new SettingsForm();
 
-        if (Yii::$app->request->post()) {
+        if (isset(Yii::$app->request->post()['User'])) {
             $connection = new \yii\db\Connection([
                 'dsn' => 'mysql:host=localhost;dbname=kidcare',
                 'username' => 'root',
