@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Filter;
+use app\models\Mood;
 use app\models\SettingsForm;
 use app\models\User_Filterlist;
 use Yii;
@@ -12,6 +13,8 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 use app\models\User;
+use app\models\Alert;
+use app\models\LogItem;
 
 class AppController extends Controller
 {
@@ -58,6 +61,28 @@ class AppController extends Controller
         ];
     }
 
+    public function actionInsight()
+    {
+        // run analyzer to process latest updates
+        Yii::$app->runAction('analyzer/index');
+
+        // show past log items
+        $logitems = LogItem::findAll([
+            'deviceid' => User::findIdentity(Yii::$app->user->id)->getAttribute('deviceid'),
+            'processed' => 1
+        ]);
+        // and alerts
+        $alerts = Alert::findAll([
+            'userid' => Yii::$app->user->id
+        ]);
+
+        // render page
+        return $this->render('insight', [
+            'logitems' => $logitems,
+            'alerts' => $alerts
+        ]);
+    }
+
     public function actionIndex()
     {
         return $this->render('dashboard');
@@ -75,7 +100,8 @@ class AppController extends Controller
         ]);
     }
 
-    public function actionTogglefilter($filter){
+    public function actionTogglefilter($filter)
+    {
         $filterlists = User_filterlist::find(['userid' => Yii::$app->user->id])->one();
         $newValue = abs($filterlists->getAttribute($filter) - 1);
         $filterlists = User_filterlist::updateAll([$filter => $newValue], ['userid' => Yii::$app->user->id]);
@@ -112,9 +138,16 @@ class AppController extends Controller
         return $this->render('realtime');
     }
 
+    /**
+     * The Sentiment Analysis page
+     * @return
+     */
     public function actionMood()
     {
-        return $this->render('moodanalysis');
+        $mood = Mood::findAll(['userid' => Yii::$app->user->id]);
+        return $this->render('moodanalysis',[
+            'mood' => $mood
+        ]);
     }
 
     public function actionSettings()

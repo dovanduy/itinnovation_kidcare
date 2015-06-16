@@ -9,8 +9,9 @@
 namespace app\models;
 
 use Faker\Provider\tr_TR\DateTime;
+use yii\db\ActiveRecord;
 
-class LogItem {
+class LogItem extends ActiveRecord {
 
 
 }

@@ -5,15 +5,16 @@
  * Date: 16-6-2015
  * Time: 16:31
  */
-
 namespace app\models;
-
 
 use yii\base\Model;
 
 class Analyzer extends Model{
 
-    public $items = ['one','two','three'];
+    public $items = [
+        ['timestamp' => '1', 'text' => 'een twee drie', 'deviceid'  => 'ert789', 'processed' => 0],
+        ['timestamp' => '2', 'text' => 'een twee drie', 'deviceid'  => 'ert789', 'processed' => 0]
+    ];
 
     /**
      * Pulls items from the external server
@@ -32,6 +33,8 @@ class Analyzer extends Model{
     /**
      * @param Check if on a word a filter is applied
      */
-    private function checkFilter($word){   }
+    public function checkFilter($user, $word){
+        return Filter::find()->where(['userid' => $user->id, 'keyword' => $word])->exists();
+    }
 
 }

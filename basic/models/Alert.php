@@ -9,27 +9,17 @@ class Alert extends ActiveRecord{
     public $message;
     public $alertType;
 
-    public function __construct($timestamp, $message, $alertType)
-    {
-        $this->setAttribute('timestamp', $timestamp);
-        $this->setAttribute('message', 'blabla');
-        $this->setAttribute('alertType', $alertType);
-
-        $this->sendNotifications();
-
-        parent::__construct();
-    }
-
     public function sendNotifications(){
 
         if($this->getAttribute('alertType') == 'mail'){
             $this->notifyByEmail();
         }
         elseif($this->getAttribute('alertType') == 'phone'){
-            echo 'notify by phone';
+            echo 'notify by phone'; //todo
         }
         elseif($this->getAttribute('alertType') == 'mail+phone'){
-            echo 'notify by email + phone';
+            $this->notifyByEmail();
+            echo 'notify by phone'; //todo
         }
     }
 

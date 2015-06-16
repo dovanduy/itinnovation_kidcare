@@ -9,6 +9,8 @@
 namespace app\models;
 
 
-class Mood {
+use yii\db\ActiveRecord;
+
+class Mood extends ActiveRecord{
 
 }

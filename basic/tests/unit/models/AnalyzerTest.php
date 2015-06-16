@@ -14,7 +14,7 @@ class AnalyzerTest extends PHPUnit_Framework_TestCase
     public function testPulling()
     {
         $analyzer = new Analyzer();
-        $this->assertEquals(sizeof($analyzer->pullItems()), 3);
+        $this->assertEquals(2, sizeof($analyzer->pullItems()));
     }
 
     public function testSplitCharacterStream1(){
@@ -45,6 +45,20 @@ class AnalyzerTest extends PHPUnit_Framework_TestCase
         $analyzer = new Analyzer();
         $words = $analyzer->splitCharacterStream('crtl+f aap ctrl+f4');
         $this->assertEquals(3, sizeof($words));
+    }
+
+    public function testCheckFilter(){
+        $user = new User();
+        $user->id = 1;
+        $analyzer = new Analyzer();
+        $this->assertTrue($this->user, $analyzer->checkFilter('cow'));
+    }
+
+    public function testCheckFilter2(){
+        $user = new User();
+        $user->id = 1;
+        $analyzer = new Analyzer();
+        $this->assertFalse($user, $analyzer->checkFilter('cows'));
     }
 
 }

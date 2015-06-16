@@ -1,6 +1,9 @@
 <?php
 namespace app\controllers;
 use app\models\Alert;
+use app\models\Filter;
+use app\models\Analyzer;
+use app\models\LogItem;
 use app\models\User;
 use Faker\Provider\tr_TR\DateTime;
 use Yii;
@@ -22,33 +25,62 @@ class AnalyzerController extends Controller
 
     public function actionIndex()
     {
-        echo 'Analyzing..';
+        $this->processLogItems();
     }
 
     /**
      * Creating alerts for log items
      */
-    public function processLogItems(){
+    public function processLogItems()
+    {
+        // pull new items from server
+        $items = LogItem::findAll([
+            'deviceid' => User::findIdentity(Yii::$app->user->id)->getAttribute('deviceid'),
+            'processed' => 0
+        ]);
 
-        // pull items from server
+        // and process each log item, printing its textual content
+        foreach ($items as $item) {
+            echo $this->analyze($item);
 
-        // process log item
+            // flag as processed
+            $item->setAttribute('processed',1);
+            $item->save();
+        }
 
-        // run sentiment analysis
+    }
 
-        // generate alert
-        $alert = new Alert(
-            date('Y-m-d G:i:s'),
-            'test',
-            'mail'
-        );
-        $alert->save();
+    /**
+     * Analyze item and return characters
+     * @param $item
+     * @return mixed
+     */
+    public function analyze($item){
+
+        // analyze each word written
+        $words = Analyzer::splitCharacterStream($item->getAttribute('characters'));
+        foreach($words as $word){
+            // if a filter is applied, send alerts
+            if (Analyzer::checkFilter(Yii::$app->user, $word)){
+                $this->createAlert($item->getAttribute('timestamp'), $word);
+            }
+        }
+
+        return $item->getAttribute('characters');
+
     }
 
     /**
      * Create alert to user on keyword found in log item
      */
     private function createAlert($timestamp, $keyword){
+        $alert = new Alert();
+        $alert->setAttribute('timestamp', $timestamp);
+        $alert->setAttribute('message',   'You child typed '.$keyword);
+        $alert->setAttribute('alertType', 'mail'); //todo according to user settings
+        $alert->setAttribute('userid', Yii::$app->user->id);
 
+        $alert->sendNotifications();
+        $alert->save();
     }
 }
