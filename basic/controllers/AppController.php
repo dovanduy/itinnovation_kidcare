@@ -69,7 +69,7 @@ class AppController extends Controller
         // show past log items
         $logitems = LogItem::findAll([
             'deviceid' => User::findIdentity(Yii::$app->user->id)->getAttribute('deviceid'),
-            'processed' => 1
+            'processed' => 2
         ]);
         // and alerts
         $alerts = Alert::findAll([
@@ -147,6 +147,9 @@ class AppController extends Controller
      */
     public function actionMood()
     {
+        // run mood analysis tool
+        Yii::$app->runAction('analyzer/runmoodanalysis');
+
         $mood = Mood::findAll(['userid' => Yii::$app->user->id]);
         return $this->render('moodanalysis',[
             'mood' => $mood

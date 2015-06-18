@@ -26,10 +26,36 @@ class AnalyzerController extends Controller
 
     public function actionIndex($log = false)
     {
+        // run analyzer to process latest updates
+        Yii::$app->runAction('synchronizer/');
+
+        // decrypt server items
+        $this->runDecrypter();
+
+        // analyze items
         $items = $this->processLogItems();
         if($log){
             echo $items;
         }
+
+        // run mood analysis
+        $this->actionRunmoodanalysis();
+    }
+
+    /**
+     * Calls the Decrypter
+     */
+    public function rundecrypter(){
+        exec('java -jar ../controllers/decrypter/KCDecrypt.jar');
+        //echo 'Decrypted.';
+    }
+
+    /**
+     * Calls the Sentiment analysis background task (jar file) to perform analysis operation.
+     * Results are processed, and stored upon in the db.
+     */
+    public function actionRunmoodanalysis(){
+        exec('java -jar sentiment_analysis/OF.jar sentiment_analysis/test.doclist -d');
     }
 
     /**
@@ -40,7 +66,7 @@ class AnalyzerController extends Controller
         // pull new items from server
         $items = LogItem::findAll([
             'deviceid' => User::findIdentity(Yii::$app->user->id)->getAttribute('deviceid'),
-            'processed' => 0
+            'processed' => 1
         ]);
 
         // and process each log item, printing its textual content
@@ -48,7 +74,7 @@ class AnalyzerController extends Controller
             $this->analyze($item);
 
             // flag as processed
-            $item->setAttribute('processed',1);
+            $item->setAttribute('processed',2);
             $item->save();
         }
 

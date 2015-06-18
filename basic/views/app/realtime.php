@@ -18,7 +18,7 @@ $this->registerJsFile(Yii::$app->request->baseUrl.'/js/realtime.js',
                 Realtime typing
             </div>
             <div class="panel-body">
-                This is how it works
+                When your child is typing, his behaviour is analyzed. The printed characters and our observations are displayed on this page.
             </div>
         </div>
     </div>
