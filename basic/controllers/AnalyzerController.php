@@ -55,7 +55,7 @@ class AnalyzerController extends Controller
      * Results are processed, and stored upon in the db.
      */
     public function actionRunmoodanalysis(){
-        exec('java -jar sentiment_analysis/OF.jar sentiment_analysis/test.doclist -d');
+        echo exec('java -jar sentiment_analysis/OF.jar; sentiment_analysis/test.doclist -d');
     }
 
     /**
