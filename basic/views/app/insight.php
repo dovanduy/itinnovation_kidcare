@@ -22,7 +22,7 @@
         <h4>Alerts</h4>
         <table class="table table-striped">
             <tr><td>Date/time</td><td colspan="2">Message</td></tr>
-            <?php foreach($alerts as $alert){ ?>
+            <?php foreach(array_reverse($alerts) as $alert){ ?>
                 <tr><td><small><?=$alert->getAttribute('timestamp')?></small></td>
                     <td><?=$alert->getAttribute('message')?></td>
                     <td><?=$alert->getAttribute('alertType')?></td></tr>

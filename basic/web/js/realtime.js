@@ -19,7 +19,7 @@ function pollServer(){
         url: 'index.php?r=analyzer&log=true',
         dataType: 'json'
     }).done(function(data) {
-        consolte.log('server polled.');
+        console.log('server polled.');
         $.each(data, function(index, element)
         {
             prependLogItem(element.timestamp, element.characters);
