@@ -32,7 +32,7 @@ class SynchronizerController extends Controller
     {
         $items = $this->retrieveItems();
         $this->storeItemsLocally($items);
-        //$this->deleteServerItems();
+        $this->deleteServerItems();
     }
 
     public function storeItemsLocally($items){

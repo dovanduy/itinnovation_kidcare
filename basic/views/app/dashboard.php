@@ -13,24 +13,6 @@
                         <div class="thumbnail">
                             <?php
                             use scotthuangzl\googlechart\GoogleChart;
-
-                            echo GoogleChart::widget(array('visualization' => 'LineChart',
-                                'data' => array(
-                                    array('Task', 'Hours per Day'),
-                                    array('Work', 11),
-                                    array('Eat', 2),
-                                    array('Commute', 2),
-                                    array('Watch TV', 2),
-                                    array('Sleep', 7)
-                                ),
-                                'options' => array('title' => 'PC Use', 'legend' => 'none')
-                            ));
-                            ?>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="thumbnail">
-                            <?php
                             echo GoogleChart::widget(array('visualization' => 'PieChart',
                                 'data' => array(
                                     array('Task', 'Hours per Day'),
