@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36642cea-5b4d-4dd9-a357-daa3dca94b61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/filterLists/games.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/filterLists/pornography.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/basic/models/filterLists/webshop.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/controllers/SynchronizerController.php" afterPath="$PROJECT_DIR$/basic/controllers/SynchronizerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/controllers/AppController.php" afterPath="$PROJECT_DIR$/basic/controllers/AppController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/app/dashboard.php" afterPath="$PROJECT_DIR$/basic/views/app/dashboard.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/site/index.php" afterPath="$PROJECT_DIR$/basic/views/site/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/basic/views/layouts/main.php" afterPath="$PROJECT_DIR$/basic/views/layouts/main.php" />
     </list>
     <ignored path="ICT Innovation.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -36,8 +34,8 @@
       <file leaf-file-name="AppController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.807693" vertical-offset="2295" max-vertical-offset="3315">
-              <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.90909094" vertical-offset="1563" max-vertical-offset="3383">
+              <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
               <folding>
                 <element signature="e#35#57#0#PHP" expanded="true" />
               </folding>
@@ -48,7 +46,7 @@
       <file leaf-file-name="SynchronizerController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/basic/controllers/SynchronizerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1615">
+            <state vertical-scroll-proportion="19.038462" vertical-offset="1073" max-vertical-offset="1615">
               <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
               <folding>
                 <element signature="e#33#55#0#PHP" expanded="true" />
@@ -67,21 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnalyzerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/basic/views/app/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1904">
-              <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="realtime.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/basic/views/app/realtime.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.35349718" vertical-offset="0" max-vertical-offset="529">
-              <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.5822306" vertical-offset="389" max-vertical-offset="1377">
+              <caret line="41" column="221" selection-start-line="41" selection-start-column="221" selection-end-line="41" selection-end-column="221" />
               <folding />
             </state>
           </provider>
@@ -98,7 +86,6 @@
         <option value="$PROJECT_DIR$/basic/views/site/login.php" />
         <option value="$PROJECT_DIR$/basic/models/ContactForm.php" />
         <option value="$PROJECT_DIR$/basic/views/site/contact.php" />
-        <option value="$PROJECT_DIR$/basic/views/site/index.php" />
         <option value="$PROJECT_DIR$/basic/views/application/dashboard.php" />
         <option value="$PROJECT_DIR$/basic/config/db.php" />
         <option value="$PROJECT_DIR$/basic/models/LoginForm.php" />
@@ -122,7 +109,6 @@
         <option value="$PROJECT_DIR$/basic/tests/unit/models/AnalyzerTest.php" />
         <option value="$PROJECT_DIR$/basic/models/LogItem.php" />
         <option value="$PROJECT_DIR$/basic/models/Synchronizer.php" />
-        <option value="$PROJECT_DIR$/basic/views/layouts/main.php" />
         <option value="$PROJECT_DIR$/basic/models/Alert.php" />
         <option value="$PROJECT_DIR$/basic/views/app/insight.php" />
         <option value="$PROJECT_DIR$/basic/models/Mood.php" />
@@ -131,14 +117,16 @@
         <option value="$PROJECT_DIR$/basic/web/css/site.css" />
         <option value="$PROJECT_DIR$/basic/models/AES128.php" />
         <option value="$PROJECT_DIR$/basic/views/app/realtime.php" />
-        <option value="$PROJECT_DIR$/basic/controllers/AppController.php" />
         <option value="$PROJECT_DIR$/basic/web/js/realtime.js" />
         <option value="$PROJECT_DIR$/basic/controllers/AnalyzerController.php" />
         <option value="$PROJECT_DIR$/basic/controllers/SynchronizerController.php" />
-        <option value="$PROJECT_DIR$/basic/views/app/dashboard.php" />
         <option value="$PROJECT_DIR$/basic/models/filterLists/webshop.php" />
         <option value="$PROJECT_DIR$/basic/models/filterLists/games.php" />
         <option value="$PROJECT_DIR$/basic/models/filterLists/pornography.php" />
+        <option value="$PROJECT_DIR$/basic/views/site/index.php" />
+        <option value="$PROJECT_DIR$/basic/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/basic/controllers/AppController.php" />
+        <option value="$PROJECT_DIR$/basic/views/app/dashboard.php" />
       </list>
     </option>
   </component>
@@ -222,7 +210,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="models" />
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICT Innovation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itinnovation_kidcare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ICT Innovation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="itinnovation_kidcare" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -597,12 +633,12 @@
       <workItem from="1434633629489" duration="10788000" />
       <workItem from="1434645382102" duration="433000" />
       <workItem from="1434663649140" duration="740000" />
-      <workItem from="1434692281457" duration="240000" />
+      <workItem from="1434692281457" duration="1229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104785000" />
+    <option name="totallyTimeSpent" value="105774000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -707,14 +743,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/basic/mail/layouts/html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1904">
@@ -796,6 +824,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5045872" vertical-offset="3635" max-vertical-offset="11373">
           <caret line="237" column="0" selection-start-line="237" selection-start-column="0" selection-end-line="237" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -810,6 +839,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.8461537" vertical-offset="869" max-vertical-offset="1411">
           <caret line="58" column="40" selection-start-line="58" selection-start-column="40" selection-end-line="58" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,6 +847,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.038462" vertical-offset="605" max-vertical-offset="1173">
           <caret line="55" column="48" selection-start-line="55" selection-start-column="48" selection-end-line="55" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -873,6 +904,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.501845" vertical-offset="0" max-vertical-offset="542">
           <caret line="21" column="5" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -901,6 +933,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.39306358" vertical-offset="0" max-vertical-offset="346">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#129#163#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -908,6 +943,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="334" max-vertical-offset="680">
           <caret line="18" column="7" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,6 +951,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.2712177" vertical-offset="368" max-vertical-offset="3213">
           <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -936,13 +973,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.51476014" vertical-offset="503" max-vertical-offset="1972">
           <caret line="52" column="38" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.5682657" vertical-offset="0" max-vertical-offset="1598">
-          <caret line="54" column="38" selection-start-line="54" selection-start-column="38" selection-end-line="54" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -995,6 +1025,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="1" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1002,6 +1033,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.5384617" vertical-offset="306" max-vertical-offset="2346">
           <caret line="32" column="38" selection-start-line="32" selection-start-column="38" selection-end-line="32" selection-end-column="38" />
+          <folding>
+            <element signature="e#28#102#0#PHP" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1010,34 +1044,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="146" max-vertical-offset="714">
           <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="2295" max-vertical-offset="3315">
-          <caret line="150" column="39" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
-          <folding>
-            <element signature="e#35#57#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1904">
-          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/basic/controllers/SynchronizerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="355" max-vertical-offset="1615">
-          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
-          <folding>
-            <element signature="e#33#55#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1073,18 +1079,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/basic/views/app/dashboard.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0" vertical-offset="170" max-vertical-offset="1173">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/basic/views/app/realtime.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35349718" vertical-offset="0" max-vertical-offset="529">
           <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/controllers/AnalyzerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1904">
+          <caret line="60" column="7" selection-start-line="60" selection-start-column="7" selection-end-line="60" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.097786" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-40.53846" vertical-offset="0" max-vertical-offset="1258">
+          <caret line="62" column="13" selection-start-line="62" selection-start-column="13" selection-end-line="62" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/controllers/SynchronizerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="19.038462" vertical-offset="1073" max-vertical-offset="1615">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="e#33#55#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/controllers/AppController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.90909094" vertical-offset="1563" max-vertical-offset="3383">
+          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
+          <folding>
+            <element signature="e#35#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/basic/views/app/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5822306" vertical-offset="389" max-vertical-offset="1377">
+          <caret line="41" column="221" selection-start-line="41" selection-start-column="221" selection-end-line="41" selection-end-column="221" />
           <folding />
         </state>
       </provider>

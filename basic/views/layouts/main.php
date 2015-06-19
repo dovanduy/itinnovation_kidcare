@@ -38,8 +38,6 @@ AppAsset::register($this);
                     // if not logged in
                     ['label'=>'Features', 'url'=>array('site/index'),
                         'visible'=>(!isset(Yii::$app->user->identity))],
-                    ['label'=>'Product',  'url'=>array('#'),
-                        'visible'=>(!isset(Yii::$app->user->identity))],
                     ['label'=>'Order now','url'=>array('site/contact'),
                         'visible'=>(!isset(Yii::$app->user->identity))],
                     ['label'=>'Login', 'url'=>array('site/login'),

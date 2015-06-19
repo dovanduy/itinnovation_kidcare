@@ -54,7 +54,15 @@ $this->title = 'Protect your family\'s online safety';
         </div>
 
         <hr/>
-        <h1>A simple monitoring-device</h1>
-        ???? How does it work ????
+        <h1>What we do</h1>
+        <p>Kid Care is the ultimate children supervisor system to protect your kids exposed to the dangers of internet. We provide a dynamic environment where caring parents can look after their kid’s activity on the computer.</p>
+        <p>The younger generation nowadays spends increasing time surfing on the internet and chatting with their friends. According to scientific researches cyberbullying is emerging in elementary schools and across teenagers, with Kid Care it’s possible to save your child from being bullied or if he is on the other side of the cock, stop his bullying behavior. But this was only the sunnier side of the problem. Naive and innocent kids are the main target of perverts and pedophiles. With our real time precise analysis and alarm system you will receive immediately a notification when your beloved little angel is in danger to act as soon as possible against the unwanted events, furthermore you are able to help the authorities to catch the bad guys thanks to our accurate logging system. Save the kids, be the hero of your neighborhood.</p>
+        <p>Based on our logging system we provide detailed analysis of the gathered data by telling the mood of your child visualized by graphs and charts. Get the results as a weekly newsletter including top keywords, sites and mood. With our detailed search tool you are able to search for specific keywords or activities, check whatever you would like if you are curious for more knowledge about your babyboy’s life on the internet. Based on your searches it is very easy to set up custom filters and alerts. If you are curious about what’s happening right at the exact moment we provide a Live Typing function where you can follow everything in real time.</p>
+        <p>Your trust toward your child is endless, but the outer world is very dangerous and full of harm. Do not let them being hurt, protect your beloved. </p>
+        <br/>
+        <hr/>
+        <br/>
+        <h1>For who?</h1>
+        <blockquote>Our main customers are caring parents who would like to look after their children and know more about their online activity protecting them from the harmful outer world.</blockquote>
     </div>
 </div>

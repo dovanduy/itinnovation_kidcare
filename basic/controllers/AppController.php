@@ -85,8 +85,12 @@ class AppController extends Controller
 
     public function actionIndex()
     {
+        $lastItem = LogItem::find([
+            'deviceid'=> User::findIdentity(Yii::$app->user->id)->getAttribute('deviceid')
+        ])->one()->getAttribute('timestamp');
         $mood = Mood::find(['userid' => Yii::$app->user->id])->one();
         return $this->render('dashboard',[
+            'lastItem' => $lastItem,
             'mood' => $mood
         ]);
     }

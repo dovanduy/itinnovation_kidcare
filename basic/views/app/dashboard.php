@@ -39,7 +39,7 @@
                 Installation help
             </div>
             <div class="panel-body">
-                ??? Description of how the device works and how to install ???
+                Place the device preferably between the pc of your child and the power outlet. Then, the device must be enabled at any time the computer is used, and so you have the most insight in your child's behaviour as possible.
             </div>
         </div>
 
@@ -52,10 +52,22 @@
             </div>
             <div class="panel-body">
                 <table class="table table-striped">
-                    <tr><td>Last action:</td><td>17:53</td></tr>
+                    <tr><td>Last action:</td><td><?=$lastItem?></td></tr>
                     <tr><td>Device:</td><td><span class="label label-success">Online</span></td></tr>
-                    <tr><td>Filters active:</td><td>2</td></tr>
-                    <tr><td>Mood: </td><td>normal</td></tr>
+                    <tr><td>Mood: </td><td><?php
+                            $max = max([$mood->getAttribute('neutral'),
+                                $mood->getAttribute('positive'),
+                                $mood->getAttribute('negative')]);
+                            if($mood->getAttribute('negative') == $max){
+                                echo 'Negative';
+                            }
+                            elseif($mood->getAttribute('positive') == $max){
+                                echo 'Positive';
+                            }
+                            else{
+                                echo 'Neutral';
+                            }
+                            ?></td></tr>
                 </table>
             </div>
         </div>
